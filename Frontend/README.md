@@ -1,4 +1,3 @@
-
 # 🌐 Full Stack App Template (React + Tailwind + Node.js + MySQL)
 
 This is a simple full stack starter template using:
@@ -50,8 +49,8 @@ project-root/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/fullstack-template.git
-cd fullstack-template
+git clone https://github.com/muvunyidv/SERN-template.git
+cd SERN TEMPLATE
 ```
 
 ---
@@ -68,7 +67,7 @@ cd backend
 
 ```bash
 npm install express cors mysql express-session
-npm install --save-dev nodemon
+npm install  nodemon
 ```
 
 ### Your `package.json` should include:
@@ -86,10 +85,10 @@ In `db.js`, update:
 
 ```js
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'myapp'
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "myapp",
 });
 ```
 
@@ -129,39 +128,24 @@ Server running on port 5000
 ### Navigate to the `frontend` folder:
 
 ```bash
-cd ../frontend
+cd ../Frontend
 ```
 
 ### Install Dependencies
 
-```bash
+````bash
 npm install
-npm install axios react-router-dom
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-```
+npm install axios react-router-dom```
 
 ### Tailwind Setup
+npm install tailwindcss @tailwindcss/vite
 
-In `tailwind.config.js`:
-
-```js
-content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-```
-
-In `src/index.css`:
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
 
 ### Start the Frontend
 
 ```bash
 npm run dev
-```
+````
 
 Visit: [http://localhost:5173](http://localhost:5173)
 
